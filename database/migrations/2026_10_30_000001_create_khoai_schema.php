@@ -23,7 +23,7 @@ return new class extends Migration
         });
         Schema::create('TaiKhoan', function (Blueprint $t) {
             $t->id('TaiKhoanID'); $t->string('TenDangNhap', 60)->unique();
-            $t->string('MatKhau'); $t->string('HoTen', 120); $t->string('Email')->unique();
+            $t->string('MatKhau'); $t->string('HoTen', 120); $t->string('Email',191)->unique();
             $t->foreignId('VaiTroID')->constrained('VaiTro', 'VaiTroID');
             $t->string('TrangThai', 30)->default('Hoạt động');
         });
