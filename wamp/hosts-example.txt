@@ -1,0 +1,2 @@
+# Them vao C:\Windows\System32\drivers\etc\hosts bang quyen Administrator
+127.0.0.1 khoai.test

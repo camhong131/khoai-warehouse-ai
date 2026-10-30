@@ -1,0 +1,12 @@
+# Sao chep noi dung nay vao WampServer -> httpd-vhosts.conf.
+# Dieu chinh duong dan C:/wamp64/www neu cai WampServer o o dia khac.
+# Can Apache mod_rewrite va AllowOverride All.
+<VirtualHost *:80>
+    ServerName khoai.test
+    DocumentRoot "C:/wamp64/www/khoai-laravel-starter/public"
+    <Directory "C:/wamp64/www/khoai-laravel-starter/public">
+        AllowOverride All
+        Require all granted
+        Options -Indexes +FollowSymLinks
+    </Directory>
+</VirtualHost>
